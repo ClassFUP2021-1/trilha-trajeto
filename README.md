@@ -59,6 +59,6 @@ Saída: 10
 "0" : "entrada invalida"}
 ```
 - Após a codificação do algoritmo não esqueça de **commitar as mudanças** clicando no botão commit **changes**.
-- Dentro do arquivo **exercicio.py** existem as variáveis: **tamanho** e **altura_inicial**. Ou seja, você deverá usa-las como entradas do seu algoritmo. Note, que esse algoritmo não recebe as entradas através do ``` input()``` e sim através de ``` sys.argv[1]```, ``` sys.argv[2]``` e ``` sys.argv[i+2]```. Para a codificação do algoritmo na sua máquina, você poderá ``` input()``` normalmente, mas não se esqueça de altera-lo para ``` sys.argv[1]```, ``` sys.argv[2]``` e ``` sys.argv[i+2]``` no momento de submeter seu código.
+- Dentro do arquivo **exercicio.py** existem as variáveis: **tamanho** e **altura_inicial** que representam **X** e **Yn** respectivamente.. Ou seja, você deverá usa-las como entradas do seu algoritmo. Note, que esse algoritmo não recebe as entradas através do ``` input()``` e sim através de ``` sys.argv[1]```, ``` sys.argv[2]``` e ``` sys.argv[i+2]```. Para a codificação do algoritmo na sua máquina, você poderá ``` input()``` normalmente, mas não se esqueça de altera-lo para ``` sys.argv[1]```, ``` sys.argv[2]``` e ``` sys.argv[i+2]``` no momento de submeter seu código.
 - Em hipótese alguma você deverá alterar o código do arquivo exercicio_test.py, caso seja detectada alguma alteração, sua resolução será desconsiderada.
 
