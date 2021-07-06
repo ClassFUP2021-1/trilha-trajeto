@@ -14,7 +14,11 @@ erros = 0
 
 for key, value in casosDeTeste.casosDeTeste.items():
   entradas = key.split('-')
-  ret = command("python exercicio.py {0} {1}".format(entradas[0], entradas[1]))
+  comd = "python teste.py " + entradas[0]
+  for i in range(1, len(entradas)):
+    comd = comd + " {0}".format(entradas[i])
+
+  ret = command(comd)
   
   if ret.decode("utf-8").replace('\n', '') != value:
     erros += 1
