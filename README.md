@@ -1,5 +1,5 @@
 # trilha-trajeto
-### Objetivo do algoritmo: Calcula o menor esforço para que um atleta percorra um determinado trajeto. 
+### Objetivo do algoritmo: Calcular o menor esforço para que um atleta percorra um determinado trajeto. 
 Um atleta que faz caminhada deseja saber o esforço para subir ou descer um determinado trajeto do seu percurso. Dado que este percurso pode ter aclive e declive, um trajeto pode ser representado por vários pontos de alturas (Hi) e pode ser percorrido em dois sentidos: indo ou voltando. Faça um programa que receba a quantidade de pontos que um trajeto deverá conter e, em seguida, seu programa deverá receber as alturas que compõem aquele trajeto.
 
 O algoritmo deverá receber um ou mais números inteiros, o primeiro será o número de pontos e os seguintes serão a altura de cada um. 
