@@ -48,7 +48,7 @@ Trecho 5: 105 a 100 (descendo) = 0
 Esforço = 9 + 2 + 4 = 15
 
 Saída:
->>> Menor esforço: 10
+> Menor esforço: 10
 
 ### Instruções gerais
 - Escreva seu código dentro do arquivo **exercicio.py**
