@@ -14,7 +14,7 @@ erros = 0
 
 for key, value in casosDeTeste.casosDeTeste.items():
   entradas = key.split('-')
-  comd = "python teste.py " + entradas[0]
+  comd = "python exercicio.py " + entradas[0]
   for i in range(1, len(entradas)):
     comd = comd + " {0}".format(entradas[i])
 
