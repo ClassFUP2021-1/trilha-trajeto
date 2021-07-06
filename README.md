@@ -47,8 +47,6 @@ Trecho 4: 101 a 105 (subindo) = 105 – 101 = 4
 Trecho 5: 105 a 100 (descendo) = 0
 Esforço = 9 + 2 + 4 = 15
 
-Menor esforço: 10
-
 Saída: 10
 
 ### Instruções gerais
