@@ -1,24 +1,26 @@
 # k-vezesDigito
-### Objetivo do algoritmo: Verifica quantas vezes um dígito aparece em um determinado número de telefone (celular ou fixo). 
-O algoritmo deverá receber dois números inteiros, o primeiro será o número que deve ser verificado e o segundo será o número do telefone. 
+### Objetivo do algoritmo: Calcula o menor esforço para que um atleta percorra um determinado trajeto. 
+Um atleta que faz caminhada deseja saber o esforço para subir ou descer um determinado trajeto do seu percurso. Dado que este percurso pode ter aclive e declive, um trajeto pode ser representado por vários pontos de alturas (Hi) e pode ser percorrido em dois sentidos: indo ou voltando. Faça um programa que receba a quantidade de pontos que um trajeto deverá conter e, em seguida, seu programa deverá receber as alturas que compõem aquele trajeto.
+
+O algoritmo deverá receber um ou mais números inteiros, o primeiro será o número de pontos e os seguintes serão a altura de cada um. 
 
 ### Objetivos do exercicio:
 - A partir do código base dentro de **exercicio.py**, você deverá validar o que já está escrito, realizando as modificações necessárias para a execução correta do algoritmo.
 - Desenvolver a capacidade de detectar os casos de teste de um algoritmo
 
 ### Entrada
-- Número inteiro X entre 0 e 9.
-- String Y com 8 dígitos ou 9 dígitos. 
+- Número inteiro tamanho de valor mínimo 2 e máximo 1000.
+- Numeros inteiros de valor maior que 0 (quantidade de números definida pelo valor da variável tamanho). 
 
 ### Saída
-- Quantidade de vezes que o primeiro número (X) aparece no segundo número (Y) ou string "entrada invalida".
+- Valor do menor esforço possível para percorrer o trajeto ou string "entrada invalida".
 
 ### Observações
-**Obs1.:** O número do telefone Y (fixo ou celular) não deve iniciar por 0 ou uma sequência de 0s, caso seja, informar ao usuário ‘entrada invalida’. Tratar outros casos inválidos conforme descrição de entrada do problema, nesse caso informar também ‘entrada invalida’.
+**Obs1.:** Seu programa deve calcular o esforço apenas quando há subidas e, portanto, não deve levar em conta que há esforço para descidas. 
 
-**Obs2.:** Não é permitido manipular os dados de entrada como listas e não se deve usar funções de contagem e de pesquisa como o count(), find(), ou outras funções de listas/strings. Caso seja utilizado, a resolução não será corrigida e não será atribuída pontuação.
+**Obs2.:** O percurso pode ser percorrido em dois sentidos: da esquerda para direita (ponto inicial é a primeira altura do trecho e ponto final é a última altura do trecho) ou o contrário (ponto inicial é a última altura do trecho e o ponto final é a primeira altura do trecho).
 
-**Obs3.:** Podem manipular como Strings, por exemplo, a entrada do telefone. O envio máximo permitido desta questão é até 2 vezes.
+**Obs3.:** As entradas deverão ser números inteiros, onde a quantidade de pontos do trajeto deverá ser no mínimo 2 e no máximo 1000.  As alturas deverão ser valores maiores que 0.
 
 ### Exemplos
 | Numero inteiro X | String Y | Saida |
