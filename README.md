@@ -9,8 +9,8 @@ O algoritmo deverá receber um ou mais números inteiros, o primeiro será o nú
 - Desenvolver a capacidade de detectar os casos de teste de um algoritmo
 
 ### Entrada
-- Número inteiro tamanho de valor mínimo 2 e máximo 1000.
-- Numeros inteiros de valor maior que 0 (quantidade de números definida pelo valor da variável tamanho). 
+- Número inteiro X de valor mínimo 2 e máximo 1000.
+- Numeros inteiros Yn de valor maior que 0 (quantidade de números definida pelo valor da variável X). 
 
 ### Saída
 - Valor do menor esforço possível para percorrer o trajeto ou string "entrada invalida".
@@ -53,7 +53,7 @@ Saída: 10
 - Escreva seu código dentro do arquivo **exercicio.py**
 - Escreva os casos de teste do algoritmo dentro do arquivo **casosDeTeste.py**
 - Dentro do arquivo **exercicio.py** existe um código que resolve parcialmente o problema. Vocé deverá validar o que está escrito, realizando as modificações necessárias para a execução correta do algoritmo.
-- Dentro do arquivo **casosDeTeste.py** existe uma estrutura no formato: { "X-Y1-Y2": "saida" }, onde X, Y e Y2 são as entradas já descritas e devem ser separadas po hífen. Você deverá inserir seus casos de teste nele. Por exemplo, {"6-100-105-101-99-90-95" : "10"} significa que as entradas serão **X = 6**, **Y = 100**, **Y = 105**, **Y = 101**, **Y = 99**, **Y = 90**, **Y = 95** e a saida será **10**. Para inserir um novo caso de teste como, por exemplo,{"0" : "entrada invalida"}, basta inserir uma virgula e adicionar os novos dados, como no exemplo abaixo:
+- Dentro do arquivo **casosDeTeste.py** existe uma estrutura no formato: { "X-Y1-Y2": "saida" }, onde X, Y1 e Y2 são as entradas já descritas e devem ser separadas po hífen. Você deverá inserir seus casos de teste nele. Por exemplo, {"6-100-105-101-99-90-95" : "10"} significa que as entradas serão **X = 6**, **Y1 = 100**, **Y2 = 105**, **Y3 = 101**, **Y4 = 99**, **Y5 = 90**, **Y6 = 95** e a saida será **10**. Para inserir um novo caso de teste como, por exemplo,{"0" : "entrada invalida"}, basta inserir uma virgula e adicionar os novos dados, como no exemplo abaixo:
 ```sh
 {"6-100-105-101-99-90-95" : "10",
 "0" : "entrada invalida"}
