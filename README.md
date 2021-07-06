@@ -27,16 +27,39 @@ O algoritmo deverá receber um ou mais números inteiros, o primeiro será o nú
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | 6 | 100 | 105 | 101 | 99 | 90 | 95 | 10 |
 
+### Exemplificando o cálculo dos trechos
+
+Considerando o ponto inicial 100 e ponto final 95:
+
+Trecho 1: 100 a 105 (subindo) = 105 – 100 = 5
+Trecho 2: 105 a 101 (descendo) = 0
+Trecho 3: 101 a 99 (descendo) = 0
+Trecho 4: 99 a 90 (descendo) = 0
+Trecho 5: 90 a 95 (subindo) = 95 – 90 = 5
+Esforço = 5 + 5 = 10
+
+Considerando o ponto inicial 95 e ponto final 100:
+
+Trecho 1: 95 a 90 (descendo) = 0
+Trecho 2: 90 a 99 (subindo) = 99 – 90 = 9
+Trecho 3: 99 a 101 (subindo) = 101 – 99 = 2
+Trecho 4: 101 a 105 (subindo) = 105 – 101 = 4
+Trecho 5: 105 a 100 (descendo) = 0
+Esforço = 9 + 2 + 4 = 15
+
+Saída:
+>>> Menor esforço: 10
+
 ### Instruções gerais
 - Escreva seu código dentro do arquivo **exercicio.py**
 - Escreva os casos de teste do algoritmo dentro do arquivo **casosDeTeste.py**
 - Dentro do arquivo **exercicio.py** existe um código que resolve parcialmente o problema. Vocé deverá validar o que está escrito, realizando as modificações necessárias para a execução correta do algoritmo.
-- Dentro do arquivo **casosDeTeste.py** existe uma estrutura no formato: { "X-Y": "saida" }, onde X e Y são as entradas já descritas e devem ser separadas po hífen. Você deverá inserir seus casos de teste nele. Por exemplo, {"1-656781111" : "4"} significa que as entradas serão **X = 1**, **Y = 656781111** e a saida será **4**. Para inserir um novo caso de teste como, por exemplo,{"0-00000000" : "entrada invalida"}, basta inserir uma virgula e adicionar os novos dados, como no exemplo abaixo:
+- Dentro do arquivo **casosDeTeste.py** existe uma estrutura no formato: { "X-Y1-Y2": "saida" }, onde X, Y e Y2 são as entradas já descritas e devem ser separadas po hífen. Você deverá inserir seus casos de teste nele. Por exemplo, {"6-100-105-101-99-90-95" : "10"} significa que as entradas serão **X = 6**, **Y = 100**, **Y = 105**, **Y = 101**, **Y = 99**, **Y = 90**, **Y = 95** e a saida será **10**. Para inserir um novo caso de teste como, por exemplo,{"0" : "entrada invalida"}, basta inserir uma virgula e adicionar os novos dados, como no exemplo abaixo:
 ```sh
-{"1-656781111" : "4",
-"0-00000000" : "entrada invalida"}
+{"6-100-105-101-99-90-95" : "10",
+"0" : "entrada invalida"}
 ```
 - Após a codificação do algoritmo não esqueça de **commitar as mudanças** clicando no botão commit **changes**.
-- Dentro do arquivo **exercicio.py** existem duas variáveis: **num1** e **num2** que representam **X** e **Y** respectivamente. Ou seja, você deverá usa-las como entradas do seu algoritmo. Note, que esse algoritmo não recebe as entradas através do ``` input()``` e sim através de ``` sys.argv[1]``` e ``` sys.argv[2]```. Para a codificação do algoritmo na sua máquina, você poderá ``` input()``` normalmente, mas não se esqueça de altera-lo para ``` sys.argv[1]``` e ``` sys.argv[2]``` no momento de submeter seu código.
+- Dentro do arquivo **exercicio.py** existem as variáveis: **tamanho** e **altura_inicial**. Ou seja, você deverá usa-las como entradas do seu algoritmo. Note, que esse algoritmo não recebe as entradas através do ``` input()``` e sim através de ``` sys.argv[1]```, ``` sys.argv[2]``` e ``` sys.argv[i+2]```. Para a codificação do algoritmo na sua máquina, você poderá ``` input()``` normalmente, mas não se esqueça de altera-lo para ``` sys.argv[1]```, ``` sys.argv[2]``` e ``` sys.argv[i+2]``` no momento de submeter seu código.
 - Em hipótese alguma você deverá alterar o código do arquivo exercicio_test.py, caso seja detectada alguma alteração, sua resolução será desconsiderada.
 
