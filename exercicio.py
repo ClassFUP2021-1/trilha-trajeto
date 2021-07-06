@@ -1,27 +1,21 @@
 import sys
 
-num1 = int(sys.argv[1])
-num2 = sys.argv[2]
+gasto_indo = 0
+gasto_voltando = 0
+tamanho = int(sys.argv[1])
 
-cont = 0 
-cont_num2 = 0
-num1_valido = True
+if tamanho >=2: 
+    altura_inicial = int(sys.argv[2])
+    for i in range(1,tamanho):
+        novo = int(sys.argv[i+2])
+        if altura_inicial - novo > 0:
 
-while True:
-   
-    if num1 < 0 or num1 > 9:
-        num1_valido = False
-        break        
-    else:      
-        unidade = num2 % 10          
-        if num1 == unidade:
-            cont = cont + 1     
-        
-        num2 = num2//10 
-        cont_num2 = cont_num2 + 1  
+            gasto_voltando = gasto_voltando
+        elif (novo - altura_inicial) > 0:
 
+            gasto_indo = gasto_indo + (novo - altura_inicial)
+        altura_inicial = novo    
 
-if  num1_valido== True or (cont_num2 == 8 or cont_num2 == 9):
-    print(cont)
-elif (num1_valido == False) or (cont_num2 != 8) or (cont_num2 != 9):
+    print(gasto_voltando)
+else:
     print('entrada invalida')
