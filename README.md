@@ -1,4 +1,4 @@
-# k-vezesDigito
+# trilha-trajeto
 ### Objetivo do algoritmo: Calcula o menor esforço para que um atleta percorra um determinado trajeto. 
 Um atleta que faz caminhada deseja saber o esforço para subir ou descer um determinado trajeto do seu percurso. Dado que este percurso pode ter aclive e declive, um trajeto pode ser representado por vários pontos de alturas (Hi) e pode ser percorrido em dois sentidos: indo ou voltando. Faça um programa que receba a quantidade de pontos que um trajeto deverá conter e, em seguida, seu programa deverá receber as alturas que compõem aquele trajeto.
 
@@ -23,10 +23,9 @@ O algoritmo deverá receber um ou mais números inteiros, o primeiro será o nú
 **Obs3.:** As entradas deverão ser números inteiros, onde a quantidade de pontos do trajeto deverá ser no mínimo 2 e no máximo 1000.  As alturas deverão ser valores maiores que 0.
 
 ### Exemplos
-| Numero inteiro X | String Y | Saida |
-| ------ | ------ | ------ |
-| 1 | 656789110 | 2 |
-| 0 | 00000000 | entrada invalida |
+| Pontos do trajeto | Ponto 1 | Ponto 2 | Ponto 3 | Ponto 4 | Ponto 5 | Ponto 6 | Saída |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| 6 | 100 | 105 | 101 | 99 | 90 | 95 | 10 |
 
 ### Instruções gerais
 - Escreva seu código dentro do arquivo **exercicio.py**
